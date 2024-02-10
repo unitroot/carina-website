@@ -9,32 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap" rel="stylesheet">
-    <style>
-        .title-brand {
-            font-family: 'Courgette', cursive;
-        }
-        h1 {
-            font-family: 'Courgette', cursive;
-        }
-        .feature-icon {
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-        }
-        .feature-icon-small {
-            width: 4rem;
-            height: 4rem;
-        }
-        #home {
-            background-image: url('./assets/img/hero-placeholder.webp');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-        }
-        .navbar {
-            background-color: rgba(231, 206, 136, 0.8);
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
   <body>
@@ -57,7 +32,10 @@
                   </li>
                 </ul>
               </div>
-              <a class="navbar-brand" href="/"><p class="title-brand mb-0">Carina Auer</p></a>
+              <a class="navbar-brand" href="/"><p class="collapse navbar-collapse title-brand mb-0">Carina Auer</p></a>
+              <div class="logo-container">
+                <img src="./assets/img/logo_v2.svg" alt="Carina Auer Logo" width="100" loading="lazy">
+              </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -75,19 +53,21 @@
           </div>
     </section>
     <section id="philosophy">
-        <div class="container px-4">        
+        <div class="container px-4 py-5">        
             <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
               <div class="col d-flex flex-column align-items-start gap-2">
                 <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
                 <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                <a href="#courses" class="btn btn-primary btn-lg">Zu den Kursen</a>
+                <a href="#courses" class="btn btn-primary btn-lg">
+                  Zu den Kursen                    
+                </a>
               </div>
         
               <div class="col">
                 <div class="row row-cols-1 row-cols-sm-2 g-4">
                   <div class="col d-flex flex-column gap-2">
                     <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                      <img src="./assets/icons/hands-holding-child-solid.svg" alt="icon" width="40" height="40">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm44.7 164.3L375.8 253c1.6 13.2-7.7 25.1-20.8 26.8s-25.1-7.7-26.8-20.8l-4.4-35h-7.6l-4.4 35c-1.6 13.2-13.6 22.5-26.8 20.8s-22.5-13.6-20.8-26.8l11.1-88.8L255.5 181c-10.1 8.6-25.3 7.3-33.8-2.8s-7.3-25.3 2.8-33.8l27.9-23.6C271.3 104.8 295.3 96 320 96s48.7 8.8 67.6 24.7l27.9 23.6c10.1 8.6 11.4 23.7 2.8 33.8s-23.7 11.4-33.8 2.8l-19.8-16.7zM40 64c22.1 0 40 17.9 40 40v40 80 40.2c0 17 6.7 33.3 18.7 45.3l51.1 51.1c8.3 8.3 21.3 9.6 31 3.1c12.9-8.6 14.7-26.9 3.7-37.8l-15.2-15.2-32-32c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l32 32 15.2 15.2 0 0 25.3 25.3c21 21 32.8 49.5 32.8 79.2V464c0 26.5-21.5 48-48 48H173.3c-17 0-33.3-6.7-45.3-18.7L28.1 393.4C10.1 375.4 0 351 0 325.5V224 160 104C0 81.9 17.9 64 40 64zm560 0c22.1 0 40 17.9 40 40v56 64V325.5c0 25.5-10.1 49.9-28.1 67.9L512 493.3c-12 12-28.3 18.7-45.3 18.7H400c-26.5 0-48-21.5-48-48V385.1c0-29.7 11.8-58.2 32.8-79.2l25.3-25.3 0 0 15.2-15.2 32-32c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-32 32-15.2 15.2c-11 11-9.2 29.2 3.7 37.8c9.7 6.5 22.7 5.2 31-3.1l51.1-51.1c12-12 18.7-28.3 18.7-45.3V224 144 104c0-22.1 17.9-40 40-40z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Gemeinschaft leben</h4>
                     <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
@@ -95,9 +75,7 @@
         
                   <div class="col d-flex flex-column gap-2">
                     <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#gear-fill"></use>
-                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 0a80 80 0 1 1 0 160A80 80 0 1 1 224 0zM436.8 382.8L373.5 462c-16.6 20.7-46.8 24.1-67.5 7.5c-17.6-14.1-22.7-38.1-13.5-57.7l-.8-.1c-38.9-5.6-74.3-25.1-99.7-54.8V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 .8 0 1.6 .1 2.4l101.4 50.7c23.7 11.9 33.3 40.7 21.5 64.4s-40.7 33.3-64.4 21.5L27.2 427.3c-1.1-.5-2.2-1.1-3.3-1.7c-4.9-2.8-9.2-6.4-12.6-10.6c-4.6-5.4-7.8-11.7-9.6-18.4c-3.3-12-1.9-25.2 4.8-36.6c.6-1.1 1.3-2.2 2-3.2L75.6 256.1c26.7-40.1 71.7-64.1 119.8-64.1h75.2c46.5 0 90.1 22.5 117.2 60.3l50.7 70.9c2.2 3 4 6.1 5.5 9.4c2.9 6.7 4.3 13.8 4 20.8c-.3 10.6-4.2 21-11.2 29.4zM320 332a44 44 0 1 0 -88 0 44 44 0 1 0 88 0z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Liebe spüren</h4>
                     <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
@@ -105,9 +83,7 @@
         
                   <div class="col d-flex flex-column gap-2">
                     <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#speedometer"></use>
-                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Sinne erkunden</h4>
                     <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
@@ -115,9 +91,7 @@
         
                   <div class="col d-flex flex-column gap-2">
                     <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                      <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#table"></use>
-                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Nachhaltig spielen</h4>
                     <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
@@ -129,9 +103,10 @@
           <div class="my-5">
             <div class="p-5 text-center bg-body-tertiary">
               <div class="container">
-                <h3 class="text-body-emphasis">Ich arbeite mit Materialien namhafter Hersteller</h3>
-                <img src="./assets/img/lovevery.svg" class="material-brands" alt="Lovevery" width="200" loading="lazy">
-                <img src="./assets/img/grimms.svg" class="material-brands" alt="Lovevery" width="200" loading="lazy">
+                <h3 class="text-body-emphasis mb-5">Ich arbeite mit Materialien namhafter Hersteller</h3>
+                <img src="./assets/img/lovevery_bw.svg" class="material-brands mx-5" alt="Lovevery Logo" width="200" loading="lazy">
+                <img src="./assets/img/grimms_bw.svg" class="material-brands mx-5" alt="Grimm's Logo" width="200" loading="lazy">
+                <img src="./assets/img/musikgarten_bw.svg" class="material-brands mx-5" alt="Musikgarten Logo" width="200" loading="lazy">
               </div>
             </div>
           </div>
@@ -143,7 +118,7 @@
                 <h3 class="display-4 fw-bold lh-1 text-body-emphasis">Über mich</h3>
                 <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
               </div>
-              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <div class="col-lg-4 offset-lg-1 p-0 shadow-lg">
                   <img class="rounded-lg-3" src="./assets/img/portrait_placeholder.jpeg" alt="" height="520">
               </div>
             </div>
@@ -152,23 +127,7 @@
     <section id="courses">
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
-        
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-body-secondary">9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="col">
                   <div class="card shadow-sm">
                     <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -203,11 +162,12 @@
             </div>
           </div>
     </section>
+
     <section id="testimonials">
         <div class="container my-5">
             <div class="row g-2">
                 <div class="col-md-4">
-                    <div class="card p-3 text-center px-4">
+                    <div class="card p-3 text-center px-4 testimonial-card">
                         <a href="https://www.google.com/maps/contrib/101435682123219528154/reviews">
                             <div class="google-review feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                                 <i class="bi bi-google"></i>
@@ -223,54 +183,36 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
-                            
                         </div>
-                        
                     </div>
                 </div>
-                
                 <div class="col-md-4">
-                    
-                    <div class="card p-3 text-center px-4">
-                        
+                    <div class="card p-3 text-center px-4 testimonial-card">
                         <a href="https://www.google.com/maps/contrib/117772659686201613566/reviews">
                             <div class="google-review feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                                 <i class="bi bi-google"></i>
                             </div>
                         </a>
-                        
                         <div class="user-content">
-                            
                             <h5 class="mb-3">Andrea Pavlov</h5>
-
                             <p>Ich war gemeinsam mit meiner Tochter im Alter von ca 1 Jahr bei Carina in der Spielgruppe („Babyclub“) und wir waren beide absolut begeistert.
-
                                 Carina führt die Gruppe mit viel Herz, Engagement und Charme. Man merkt ihr an, dass sie das richtig gerne macht und auch die Kinder spüren das.
                                 Nahezu alle Lieder/Kniereiter waren neu für mich - wofür ich sehr dankbar war beim dritten Kind 😉.
                                 
                                 Wir würden jederzeit wieder buchen und können es nur Jedem empfehlen! Es hat uns den Herbst und Winterbeginn versüßt und wir werden Carina mit ihren wundervollen Ideen vermissen!</p>
-                            
                         </div>
-                        
                         <div class="ratings">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
-                            
                         </div>
-                        
                     </div>
-                    
                 </div>
-                
                 <div class="col-md-4">
-                    
-                    <div class="card p-3 text-center px-4">
-                        
+                    <div class="card p-3 text-center px-4 testimonial-card">
                         <a href="https://www.google.com/maps/contrib/102495136513301068726/reviews">
-                            
                             <div class="google-review feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                                 <i class="bi bi-google"></i>
                             </div>
