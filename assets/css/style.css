@@ -27,7 +27,14 @@ h1 {
     height: 100vh;
 }
 .navbar {
-    background-color: rgba(255, 255, 255, 1);
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0) 90%, rgba(255,255,255,0) 100%);
+}
+
+.navbar-brand {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
 }
 
 .testimonial-card {
@@ -37,4 +44,15 @@ h1 {
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0 1rem;
+}
+
+.lemoni {
+    background-image: url('../img/lemoni.png');
+}
+
+.third-party-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
