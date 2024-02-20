@@ -14,41 +14,44 @@
 </head>
   <body>
     <section id="home">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid justify-content-center">
-              <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 10px;">
-                <image src="./assets/img/logo_v3.svg" alt="Carina Auer Logo" height="40px" loading="lazy">
-                <p class="mb-0 title-brand collapse navbar-collapse">Carina Auer</p>
-              </a>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav justify-content-center ">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#philosophy">Philosophie</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">Über Mich</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#courses">Kurse</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                  </li>
-                </ul>
-              </div>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+        <nav class="navbar navbar-expand-lg justify-content-between">
+          <div class="container-fluid justify-content-center">
+            <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 10px;">
+              <image src="./assets/img/logo_v3.svg" alt="Carina Auer Logo" height="40px" loading="lazy">
+              <p class="mb-0 title-brand collapse navbar-collapse">Carina Auer</p>
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#philosophy">Philosophie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Über Mich</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#courses">Kurse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        <div class="container col-xxl-8 px-4 py-5">
+            <button type="button" class="navbar-collapse btn btn-secondary btn-sm">
+              Kontakt
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+          <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assets/img/hero_unsplash.png" class="d-block mx-lg-auto img-fluid" alt="Hero" width="700" height="500" loading="lazy">
+              </div>
               <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Montessori mit Herz</h1>
-
-                </div>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
               </div>
             </div>
           </div>
@@ -59,7 +62,7 @@
               <div class="col d-flex flex-column align-items-start gap-2">
                 <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
                 <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                <a href="#courses" class="btn btn-primary btn-lg">
+                <a href="#courses" class="btn btn-secondary btn-lg">
                   Zu den Kursen                    
                 </a>
               </div>
@@ -67,7 +70,7 @@
               <div class="col">
                 <div class="row row-cols-1 row-cols-sm-2 g-4">
                   <div class="col d-flex flex-column gap-2">
-                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3 stitched">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M320 0a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm44.7 164.3L375.8 253c1.6 13.2-7.7 25.1-20.8 26.8s-25.1-7.7-26.8-20.8l-4.4-35h-7.6l-4.4 35c-1.6 13.2-13.6 22.5-26.8 20.8s-22.5-13.6-20.8-26.8l11.1-88.8L255.5 181c-10.1 8.6-25.3 7.3-33.8-2.8s-7.3-25.3 2.8-33.8l27.9-23.6C271.3 104.8 295.3 96 320 96s48.7 8.8 67.6 24.7l27.9 23.6c10.1 8.6 11.4 23.7 2.8 33.8s-23.7 11.4-33.8 2.8l-19.8-16.7zM40 64c22.1 0 40 17.9 40 40v40 80 40.2c0 17 6.7 33.3 18.7 45.3l51.1 51.1c8.3 8.3 21.3 9.6 31 3.1c12.9-8.6 14.7-26.9 3.7-37.8l-15.2-15.2-32-32c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l32 32 15.2 15.2 0 0 25.3 25.3c21 21 32.8 49.5 32.8 79.2V464c0 26.5-21.5 48-48 48H173.3c-17 0-33.3-6.7-45.3-18.7L28.1 393.4C10.1 375.4 0 351 0 325.5V224 160 104C0 81.9 17.9 64 40 64zm560 0c22.1 0 40 17.9 40 40v56 64V325.5c0 25.5-10.1 49.9-28.1 67.9L512 493.3c-12 12-28.3 18.7-45.3 18.7H400c-26.5 0-48-21.5-48-48V385.1c0-29.7 11.8-58.2 32.8-79.2l25.3-25.3 0 0 15.2-15.2 32-32c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-32 32-15.2 15.2c-11 11-9.2 29.2 3.7 37.8c9.7 6.5 22.7 5.2 31-3.1l51.1-51.1c12-12 18.7-28.3 18.7-45.3V224 144 104c0-22.1 17.9-40 40-40z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Gemeinschaft leben</h4>
@@ -75,7 +78,7 @@
                   </div>
         
                   <div class="col d-flex flex-column gap-2">
-                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3 stitched">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224 0a80 80 0 1 1 0 160A80 80 0 1 1 224 0zM436.8 382.8L373.5 462c-16.6 20.7-46.8 24.1-67.5 7.5c-17.6-14.1-22.7-38.1-13.5-57.7l-.8-.1c-38.9-5.6-74.3-25.1-99.7-54.8V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 .8 0 1.6 .1 2.4l101.4 50.7c23.7 11.9 33.3 40.7 21.5 64.4s-40.7 33.3-64.4 21.5L27.2 427.3c-1.1-.5-2.2-1.1-3.3-1.7c-4.9-2.8-9.2-6.4-12.6-10.6c-4.6-5.4-7.8-11.7-9.6-18.4c-3.3-12-1.9-25.2 4.8-36.6c.6-1.1 1.3-2.2 2-3.2L75.6 256.1c26.7-40.1 71.7-64.1 119.8-64.1h75.2c46.5 0 90.1 22.5 117.2 60.3l50.7 70.9c2.2 3 4 6.1 5.5 9.4c2.9 6.7 4.3 13.8 4 20.8c-.3 10.6-4.2 21-11.2 29.4zM320 332a44 44 0 1 0 -88 0 44 44 0 1 0 88 0z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Liebe spüren</h4>
@@ -83,7 +86,7 @@
                   </div>
         
                   <div class="col d-flex flex-column gap-2">
-                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3 stitched">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Sinne erkunden</h4>
@@ -91,7 +94,7 @@
                   </div>
         
                   <div class="col d-flex flex-column gap-2">
-                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4 rounded-3 stitched">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 418.7 96 376 96L272 96z"/></svg>
                     </div>
                     <h4 class="fw-semibold mb-0 text-body-emphasis">Nachhaltig spielen</h4>
@@ -101,12 +104,14 @@
               </div>
             </div>
           </div>
+    </section>
+    <section id="materials">
           <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
+            <div class="p-5 text-center">
               <div class="container">
                 <h3 class="text-body-emphasis mb-5">Ich arbeite bevorzugt mit Materialien namhafter Hersteller</h3>
                 <div class="third-party-logos">
-                  <img src="./assets/img/lovevery_bw.svg" class="material-brands mx-5 my-3" alt="Lovevery Logo" width="200" loading="lazy">
+                  <img src="./assets/img/lovevery_bw.svg" class="material-brands mx-5 my-3 stitched-outline" alt="Lovevery Logo" width="200" loading="lazy">
                   <img src="./assets/img/grimms_bw.svg" class="material-brands mx-5 my-3" alt="Grimm's Logo" width="200" loading="lazy">
                   <img src="./assets/img/musikgarten_bw.svg" class="material-brands mx-5 my-3" alt="Musikgarten Logo" width="200" loading="lazy">
               </div>
@@ -147,7 +152,7 @@
                       </ul>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <a href="mailto:cari007@gmx.at" class="btn btn-primary btn-sm">Anmelden</a>
+                          <a href="mailto:cari007@gmx.at" class="btn btn-secondary btn-sm">Anmelden</a>
                           <button type="button" class="btn btn-sm btn-outline-primary">Mehr Details</button>
                         </div>
                         <small class="text-body-secondary"></small>

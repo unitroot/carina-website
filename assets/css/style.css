@@ -1,11 +1,22 @@
 .title-brand {
     font-family: 'Courgette', cursive;
     font-size: 2rem;
+    color: #6AA4D9;
 }
+
+.nav-link {
+    color: #6AA4D9;
+    font-family: "courgette", cursive;
+}
+
+html {
+    background-color: white;
+}
+
 h1 {
     font-family: 'Courgette', cursive;
     font-size: 3rem;
-    color: white;
+    color: #6AA4D9;
 }
 .feature-icon {
     width: 4rem;
@@ -21,14 +32,24 @@ h1 {
     height: 4rem;
 }
 #home {
-    background-image: url('../img/hero_unsplash.png');
+    background-image: url('../img/hero.png');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     height: 100vh;
 }
-.navbar {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0) 90%, rgba(255,255,255,0) 100%);
+
+#philosophy {
+    background-image: url('../img/bg-right.png');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#about {
+    background-image: url('../img/bg-left.png');
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .navbar-brand {
@@ -56,3 +77,80 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.ca-primary-bg {
+    color: #6AA4D9;
+}
+
+.ca-secondary-bg {
+    color: #EE97C0;
+}
+
+.btn-primary {
+    background-color: #6AA4D9;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #4E8ACF;
+}
+
+.btn-primary:active {
+    background-color: #3671A9;
+}
+
+.btn-secondary {
+    background-color: #EE97C0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #D56B9B;
+}
+
+.btn-secondary:active {
+    background-color: #C24D85;
+}
+.btn-secondary.clicked {
+    background-color: #C24D85;
+}
+
+
+
+.stitched {
+    padding: 0.75rem;
+    margin: 10px;
+    background: #6AA4D9;
+    color: #fff;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #6AA4D9;
+    text-shadow: -1px -1px #3671A9;
+    font-weight: normal;
+ }
+
+ .stitched-outline {
+    padding: 0.75rem;
+    margin: 10px;
+    color: #6AA4D9;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #6AA4D9;
+    border-radius: 10px;
+    font-weight: normal;
+ }
